@@ -1,0 +1,32 @@
+{
+  "name": "web-oc-client",
+  "version": "1.0.0",
+  "description": "Framework-agnostic TypeScript web client for the opencode server, built on @opencode-ai/sdk",
+  "type": "module",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "keywords": [
+    "opencode",
+    "client",
+    "web"
+  ],
+  "dependencies": {
+    "@opencode-ai/sdk": "1.18.15"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.0",
+    "typescript": "^5.9.0"
+  }
+}
