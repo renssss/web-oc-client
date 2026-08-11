@@ -38,6 +38,7 @@ export interface OpenCodeWebClient {
   readonly tool: ToolFacade;
   readonly tui: TuiFacade;
   readonly vcs: VcsFacade;
+  /** Power-user bypass and test seam: the underlying SDK client. Prefer the typed facades. */
   readonly sdk: OpencodeClient;
   events(options?: EventSubscribeOptions, stream?: StreamOptions): Promise<EventStream<Event>>;
   subscribe(options?: EventSubscribeOptions, stream?: StreamOptions): Promise<EventStream<Event>>;

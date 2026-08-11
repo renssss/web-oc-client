@@ -1,2 +1,5 @@
 node_modules/
 .opencode/
+.scratch/
+web/node_modules/
+web/dist/
